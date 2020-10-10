@@ -39,7 +39,7 @@ func main() {
 }
 
 func connectDB() (c *pgx.Conn, err error) {
-	conn, err := pgx.Connect(context.Background(), "postgresql://davidevhade:0704502@localhost:5432/offersapp")
+	conn, err := pgx.Connect(context.Background(), "postgresql://username:pwd@localhost:5432/offersapp")
 	if err != nil {
 		fmt.Println("Error connecting to DB")
 		fmt.Println(err.Error())
